@@ -9,8 +9,10 @@ applyMiddleWare(app);
 
 
 const tasksRoutes = require("./routes/Tasks/index")
+const userRoutes = require("./routes/Users")
 
 app.use(tasksRoutes)
+app.use(userRoutes)
 
 
 app.use((err, req, res, next) => {
